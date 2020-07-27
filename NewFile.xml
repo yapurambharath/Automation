@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression_Suite" parallel="methods" thread-count="2">
+	
+	<test name="TestingImage">
+	<classes>
+	<class name="com.project.TestScripts.TestScripts">
+	<methods>
+	<include name="ImageTesting"></include>
+	</methods>
+	</class>
+	</classes>
+	</test> 
+
+	<test name="TestingGmail">
+	<classes>
+	<class name="com.project.TestScripts.TestScripts">
+	<methods>
+	<include name="gmailTesting"></include>
+	</methods>
+	</class>
+	</classes>
+	</test>
+	 
+</suite>

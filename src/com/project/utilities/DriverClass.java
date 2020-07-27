@@ -1,6 +1,5 @@
 package com.project.utilities;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -11,5 +10,5 @@ public class DriverClass {
 	public static ExtentHtmlReporter reporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
-	public static By By;
+	
 }
