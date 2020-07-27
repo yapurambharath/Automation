@@ -23,6 +23,7 @@ public class TestScripts extends DriverClass {
 	public void launchBrow()
 	{
 		driver.get("https://www.google.com");
+		
 	}
 	
 	@Test
