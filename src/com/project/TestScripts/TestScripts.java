@@ -1,4 +1,6 @@
 package com.project.TestScripts;
+import java.io.IOException;
+
 import org.apache.commons.collections4.functors.ChainedClosure;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -38,7 +40,7 @@ public class TestScripts extends DriverClass {
 	}
 	
 	@Test
-	public void ImageTesting()
+	public void ImageTesting() throws IOException
 	{
 		objGO.imageTest();
 	}
@@ -46,12 +48,13 @@ public class TestScripts extends DriverClass {
 	@AfterTest
 	public void flu()
 	{
+		driver.quit();
 		extent.flush();
 	}
 	
 	@AfterSuite
 	public void AftS()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 }
